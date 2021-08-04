@@ -3,14 +3,26 @@
     padding: 0px;
 }
 
-body{
-    text-align: center;
-}
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
 
-#listado{
-    list-style-type: none;
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+.listado{
+
+     display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: rgb(57, 55, 177);
 }
@@ -19,7 +31,7 @@ body{
     float: right;
 }
 
-.lista a {
+.listado a {
     display: block;
     color: white;
   text-align: center;
@@ -31,14 +43,18 @@ body{
 
 .container-1{
  display: flex;
- justify-content: space-between ;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ align-items: baseline;
  
  
 }
 
 .container-2{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .container-1 div, .container-2 div{
@@ -46,9 +62,7 @@ body{
     padding: 10px;
 }
 
-.container-2-item{
-   flex-basis: 4%;
-}
+
 
 .pie {
     background-color: rgb(57, 55, 177);
