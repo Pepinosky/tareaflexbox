@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+}
+
+#listado{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(57, 55, 177);
+}
+
+.lista {
+    float: right;
+}
+
+.lista a {
+    display: block;
+    color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+
+}
+
+.container-1{
+ display: flex;
+ justify-content: space-between ;
+ 
+ 
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1 div, .container-2 div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.container-2-item{
+   flex-basis: 4%;
+}
+
+.pie {
+    background-color: rgb(57, 55, 177);
+}
